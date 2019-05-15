@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfDentalClinicC"
         mc:Ignorable="d"
-        Title="Інформація" Height="450" Width="541.631" Icon="favicon.ico">
+        Title="Інформація" Height="450" Width="541.631" Icon="favicon.ico" WindowStartupLocation="CenterScreen">
     <Window.Background>
         <ImageBrush ImageSource="/личное-кофе-Сова-art-104600.png" Stretch="UniformToFill"/>
     </Window.Background>
@@ -88,7 +88,7 @@
                     <TextBlock.Background>
                         <SolidColorBrush Color="Lime" Opacity="0.5"/>
                     </TextBlock.Background></TextBlock>
-                <TextBlock Grid.Row="4" Text="Тип велосипеду:" FontSize="18" FontFamily="Times New Roman" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <TextBlock Grid.Row="4" Text="Тип івента:" FontSize="18" FontFamily="Times New Roman" HorizontalAlignment="Left" VerticalAlignment="Center">
                     <TextBlock.Background>
                         <SolidColorBrush Color="Lime" Opacity="0.5"/>
                     </TextBlock.Background></TextBlock>

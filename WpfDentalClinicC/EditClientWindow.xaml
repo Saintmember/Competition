@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfDentalClinicC"
         mc:Ignorable="d"
-        Title="Редагування" Height="450" Width="690.36" Icon="favicon.ico">
+        Title="Редагування" Height="475.2" Width="690.36" Icon="favicon.ico">
     <Window.Background>
         <ImageBrush ImageSource="/wallpaper_rayman_raving_rabbids_tv_party_01.jpg" Stretch="UniformToFill"/>
     </Window.Background>
@@ -20,26 +20,6 @@
                     <SolidColorBrush Color="Lime" Opacity="0.5"/>
                 </TextBlock.Background></TextBlock>
             <TextBox x:Name="txt_SurName" FontSize="20">
-                <TextBox.Background>
-                    <SolidColorBrush Color="LightGray" Opacity="0.5"/>
-                </TextBox.Background>
-            </TextBox>
-            <TextBlock Text="Логін" FontSize="20" HorizontalAlignment="Center">
-                <TextBlock.Background>
-                    <SolidColorBrush Color="Lime" Opacity="0.5"/>
-                </TextBlock.Background>
-            </TextBlock>
-            <TextBox x:Name="txt_SurName_Copy" FontSize="20">
-                <TextBox.Background>
-                    <SolidColorBrush Color="LightGray" Opacity="0.5"/>
-                </TextBox.Background>
-            </TextBox>
-            <TextBlock Text="Стать" FontSize="20" HorizontalAlignment="Center">
-                <TextBlock.Background>
-                    <SolidColorBrush Color="Lime" Opacity="0.5"/>
-                </TextBlock.Background>
-            </TextBlock>
-            <TextBox x:Name="txt_SurName_Copy1" FontSize="20">
                 <TextBox.Background>
                     <SolidColorBrush Color="LightGray" Opacity="0.5"/>
                 </TextBox.Background>
@@ -63,16 +43,6 @@
                     <SolidColorBrush Color="LightGray" Opacity="0.5"/>
                 </TextBox.Background>
             </TextBox>
-            <TextBlock Text="Команда" FontSize="20" HorizontalAlignment="Center">
-                <TextBlock.Background>
-                    <SolidColorBrush Color="Lime" Opacity="0.5"/>
-                </TextBlock.Background>
-            </TextBlock>
-            <TextBox x:Name="txt_Email_Copy" FontSize="20">
-                <TextBox.Background>
-                    <SolidColorBrush Color="LightGray" Opacity="0.5"/>
-                </TextBox.Background>
-            </TextBox>
         </StackPanel>
         <TextBlock Text="Ім'я" FontSize="20" Grid.Column="1" Margin="0,-1,0,392" HorizontalAlignment="Center">
             <TextBlock.Background>
@@ -80,16 +50,6 @@
             </TextBlock.Background>
         </TextBlock>
         <TextBox x:Name="txt_Name" FontSize="20" Grid.Column="1" Margin="0,27,0,363">
-            <TextBox.Background>
-                <SolidColorBrush Color="LightGray" Opacity="0.5"/>
-            </TextBox.Background>
-        </TextBox>
-        <TextBlock Text="Пароль" FontSize="20" Grid.Column="1" Margin="0,55,0,336" HorizontalAlignment="Center">
-            <TextBlock.Background>
-                <SolidColorBrush Color="Lime" Opacity="0.5"/>
-            </TextBlock.Background>
-        </TextBlock>
-        <TextBox x:Name="txt_Name_Copy" FontSize="20" Grid.Column="1" Margin="0,83,0,307">
             <TextBox.Background>
                 <SolidColorBrush Color="LightGray" Opacity="0.5"/>
             </TextBox.Background>
@@ -120,16 +80,6 @@
             </TextBlock.Background>
         </TextBlock>
         <TextBox x:Name="txt_Phone" FontSize="20" Grid.Column="1" Margin="0,251,0,139">
-            <TextBox.Background>
-                <SolidColorBrush Color="LightGray" Opacity="0.5"/>
-            </TextBox.Background>
-        </TextBox>
-        <TextBlock Text="Тип велосипеду" FontSize="20" Grid.Column="1" Margin="0,280,0,112" HorizontalAlignment="Center">
-            <TextBlock.Background>
-                <SolidColorBrush Color="Lime" Opacity="0.5"/>
-            </TextBlock.Background>
-        </TextBlock>
-        <TextBox x:Name="txt_Email_Copy1" FontSize="20" Grid.Column="1" Margin="0,307,0,83">
             <TextBox.Background>
                 <SolidColorBrush Color="LightGray" Opacity="0.5"/>
             </TextBox.Background>

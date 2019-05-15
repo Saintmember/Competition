@@ -14,7 +14,7 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <StackPanel VerticalAlignment="Center">
-            <TextBlock Text="Ім'я" FontSize="24" HorizontalAlignment="Center" FontFamily="Times New Roman">
+            <TextBlock Text="Назва" FontSize="24" HorizontalAlignment="Center" FontFamily="Times New Roman">
                 <TextBlock.Background>
                     <SolidColorBrush Color="Lime" Opacity="0.5"/>
                 </TextBlock.Background>
@@ -24,7 +24,7 @@
                     <SolidColorBrush Color="White" Opacity="0.5"/>
                 </TextBox.Background>
             </TextBox>
-            <TextBlock Text="Івенти" FontSize="24" HorizontalAlignment="Center" FontFamily="Times New Roman">
+            <TextBlock Text="Тип" FontSize="24" HorizontalAlignment="Center" FontFamily="Times New Roman">
                 <TextBlock.Background>
                     <SolidColorBrush Color="Lime" Opacity="0.5"/>
                 </TextBlock.Background>
