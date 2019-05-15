@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfDentalClinicC"
         mc:Ignorable="d"
-        Title="Івенти" Height="450" Width="387.182" Icon="favicon.ico">
+        Title="Івенти" Height="450" Width="387.182" Icon="favicon.ico" WindowStartupLocation="CenterScreen">
     <Window.Background>
         <ImageBrush ImageSource="/tn111.jpg" Stretch="UniformToFill"/>
     </Window.Background>

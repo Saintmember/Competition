@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfDentalClinicC"
         mc:Ignorable="d"
-        Title="Команда" Height="450" Width="684.64" Icon="favicon.ico">
+        Title="Команда" Height="450" Width="684.64" Icon="favicon.ico" WindowStartupLocation="CenterScreen">
     <Window.Background>
         <ImageBrush ImageSource="/6796015-girl-mood-background.jpg" Stretch="UniformToFill"/>
     </Window.Background>
