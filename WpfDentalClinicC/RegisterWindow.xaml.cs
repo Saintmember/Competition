@@ -11,10 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using WcfService1.Models;//nz chi pralno
+using WcfService1.Models;
 using WcfService1.ModelsToMap;
 using WpfDentalClinicC.ServiceReference1;
-
 namespace WpfDentalClinicC
 {
     /// <summary>
@@ -26,7 +25,6 @@ namespace WpfDentalClinicC
         {
             InitializeComponent();
         }
-
         private void btn_AddNewUser_Click(object sender, RoutedEventArgs e)
         {
             if (String.IsNullOrEmpty(txt_Name.Text))

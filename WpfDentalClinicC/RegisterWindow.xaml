@@ -126,7 +126,6 @@
                 </TextBox.Background>
             </TextBox>
         </StackPanel>
-
         <Button Content="Зареєструватись" VerticalAlignment="Bottom" HorizontalAlignment="Center" BorderBrush="White" FontSize="24" Grid.ColumnSpan="2" Click="btn_AddNewUser_Click" FontFamily="Times New Roman">
             <Button.Background>
                 <SolidColorBrush Color="Lime" Opacity="0.5"/>

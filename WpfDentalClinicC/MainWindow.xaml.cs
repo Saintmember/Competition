@@ -1,7 +1,6 @@
 ﻿using System.Windows;
 using WcfService1.ModelsToMap;
 using WpfDentalClinicC.ServiceReference1;
-
 namespace WpfDentalClinicC
 {
     /// <summary>
@@ -22,7 +21,6 @@ namespace WpfDentalClinicC
             RegisterWindow registerWindow = new RegisterWindow();
             registerWindow.Show();
         }
-
         private void Btn_SignInClick(object sender, RoutedEventArgs e)
         {
             using (Service1Client service1Client = new Service1Client())
@@ -39,7 +37,7 @@ namespace WpfDentalClinicC
                     }
                     else
                     {
-                        MessageBox.Show("Виникла помилка))))");
+                        MessageBox.Show("Виникла помилка");
                     }
                 }
                 else
