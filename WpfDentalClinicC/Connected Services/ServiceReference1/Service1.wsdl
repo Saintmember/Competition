@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:52879/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:52879/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:52879/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfService1.ModelsToMap" />
+      <xsd:import schemaLocation="http://localhost:52879/Service1.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:52879/Service1.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/WcfService1.Models" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_CountClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountClient" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CountClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddClient" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_LogIn_InputMessage">
+    <wsdl:part name="parameters" element="tns:LogIn" />
+  </wsdl:message>
+  <wsdl:message name="IService1_LogIn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LogInResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ChakLoginAddNewClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChakLoginAddNewClient" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ChakLoginAddNewClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChakLoginAddNewClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClient" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddDiagnosis_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddDiagnosis" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddDiagnosis_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddDiagnosisResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_MapClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:MapClient" />
+  </wsdl:message>
+  <wsdl:message name="IService1_MapClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MapClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditClient" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EditClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_MapDiagosis_InputMessage">
+    <wsdl:part name="parameters" element="tns:MapDiagosis" />
+  </wsdl:message>
+  <wsdl:message name="IService1_MapDiagosis_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MapDiagosisResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddDocToClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddDocToClient" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AddDocToClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddDocToClientResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="CountClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CountClient" message="tns:IService1_CountClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CountClientResponse" message="tns:IService1_CountClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddClient" message="tns:IService1_AddClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddClientResponse" message="tns:IService1_AddClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LogIn">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/LogIn" message="tns:IService1_LogIn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/LogInResponse" message="tns:IService1_LogIn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChakLoginAddNewClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ChakLoginAddNewClient" message="tns:IService1_ChakLoginAddNewClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ChakLoginAddNewClientResponse" message="tns:IService1_ChakLoginAddNewClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetClient" message="tns:IService1_GetClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetClientResponse" message="tns:IService1_GetClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddDiagnosis">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddDiagnosis" message="tns:IService1_AddDiagnosis_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddDiagnosisResponse" message="tns:IService1_AddDiagnosis_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MapClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/MapClient" message="tns:IService1_MapClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/MapClientResponse" message="tns:IService1_MapClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EditClient" message="tns:IService1_EditClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EditClientResponse" message="tns:IService1_EditClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MapDiagosis">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/MapDiagosis" message="tns:IService1_MapDiagosis_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/MapDiagosisResponse" message="tns:IService1_MapDiagosis_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddDocToClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddDocToClient" message="tns:IService1_AddDocToClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddDocToClientResponse" message="tns:IService1_AddDocToClient_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CountClient">
+      <soap:operation soapAction="http://tempuri.org/IService1/CountClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddClient">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogIn">
+      <soap:operation soapAction="http://tempuri.org/IService1/LogIn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChakLoginAddNewClient">
+      <soap:operation soapAction="http://tempuri.org/IService1/ChakLoginAddNewClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClient">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddDiagnosis">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddDiagnosis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MapClient">
+      <soap:operation soapAction="http://tempuri.org/IService1/MapClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditClient">
+      <soap:operation soapAction="http://tempuri.org/IService1/EditClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MapDiagosis">
+      <soap:operation soapAction="http://tempuri.org/IService1/MapDiagosis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddDocToClient">
+      <soap:operation soapAction="http://tempuri.org/IService1/AddDocToClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:52879/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

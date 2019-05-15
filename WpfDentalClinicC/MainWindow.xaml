@@ -1,0 +1,78 @@
+﻿<Window x:Class="WpfDentalClinicC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDentalClinicC"
+        mc:Ignorable="d"
+        Title="Вхід" Height="450" Width="585" WindowStartupLocation="CenterScreen" MinWidth="585" MinHeight="450" Icon="favicon.ico">
+    <Window.Background>
+        <ImageBrush ImageSource="/IMG_2054.JPG" Stretch="UniformToFill"/>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Column="1" VerticalAlignment="Bottom" Text="Логін" HorizontalAlignment="Center" FontSize="24" FontFamily="Times New Roman">
+                <TextBlock.Background>
+                    <SolidColorBrush Color="Lime" Opacity="0.5"/>
+                </TextBlock.Background>
+            </TextBlock>
+            <TextBox x:Name="txt_Login" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" FontSize="20">
+                <TextBox.Background>
+                    <SolidColorBrush Color="LightGray" Opacity="0.5"/>
+                </TextBox.Background>
+            </TextBox>
+            <Button Content="Реєстрація" FontSize="24" Click="Btn_SignUpClick" Margin="38,0,24,53" FontFamily="Times New Roman" Grid.Column="1">
+                <Button.Background>
+                    <SolidColorBrush Color="Lime" Opacity="0.5"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Column="1" VerticalAlignment="Top" Text="Пароль" HorizontalAlignment="Center" FontSize="24" FontFamily="Times New Roman">
+                <TextBlock.Background>
+                    <SolidColorBrush Color="Lime" Opacity="0.5"/>
+                </TextBlock.Background></TextBlock>
+            <PasswordBox x:Name="txt_Password" Grid.Column="1"  VerticalAlignment="Center" FontSize="20" Margin="0,75,0,0">
+                <PasswordBox.Background>
+                    <SolidColorBrush Color="LightGray" Opacity="0.5"/>
+                </PasswordBox.Background>
+            </PasswordBox>
+            <Grid Grid.Column="1" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Content="Вхід" FontSize="24" Click="Btn_SignInClick" Margin="30,52,32,0" FontFamily="Times New Roman" Grid.ColumnSpan="2">
+                    <Button.Background>
+                        <SolidColorBrush Color="Lime" Opacity="0.5"/>
+                    </Button.Background>
+                </Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

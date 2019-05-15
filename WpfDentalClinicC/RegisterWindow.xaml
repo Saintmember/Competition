@@ -1,0 +1,136 @@
+﻿<Window x:Class="WpfDentalClinicC.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDentalClinicC"
+        mc:Ignorable="d"
+        Title="Реєстрація" Height="450" Width="586" WindowStartupLocation="CenterScreen" MinWidth="586" MinHeight="450" Icon="favicon.ico">
+    <Window.Background>
+        <ImageBrush ImageSource="/IMG_1981.JPG" Stretch="UniformToFill"/>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Text="Прізвище" FontSize="24" FontFamily="Times New Roman" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="95,0,94,0">
+                <TextBlock.Background>
+                    <SolidColorBrush Color="Lime" Opacity="0.5"/>
+                </TextBlock.Background></TextBlock>
+            <TextBox x:Name="txt_SurName" FontSize="20">
+                <TextBox.Background>
+                    <SolidColorBrush Color="LightGray" Opacity="0.5"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBlock Text="Логін" FontSize="24" FontFamily="Times New Roman" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                <TextBlock.Background>
+                    <SolidColorBrush Color="Lime" Opacity="0.5"/>
+                </TextBlock.Background></TextBlock>
+            <TextBox x:Name="txt_Login" FontSize="20">
+                <TextBox.Background>
+                    <SolidColorBrush Color="LightGray" Opacity="0.5"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBlock Text="Стать" FontSize="24" FontFamily="Times New Roman" VerticalAlignment="Bottom" Margin="60,0,51,0" HorizontalAlignment="Center">
+                <TextBlock.Background>
+                    <SolidColorBrush Color="Lime" Opacity="0.5"/>
+                </TextBlock.Background></TextBlock>
+            <TextBox x:Name="txt_Street_Copy1" FontSize="20" Margin="0,0,-1,0" Height="29">
+                <TextBox.Background>
+                    <SolidColorBrush Color="LightGray" Opacity="0.5"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBlock Text="Країна" FontSize="24" FontFamily="Times New Roman" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="110,0,109,0">
+                <TextBlock.Background>
+                    <SolidColorBrush Color="Lime" Opacity="0.5"/>
+                </TextBlock.Background></TextBlock>
+            <TextBox x:Name="txt_Country" FontSize="20" Margin="0,0,-1,0">
+                <TextBox.Background>
+                    <SolidColorBrush Color="LightGray" Opacity="0.5"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBlock Text="E-mail" FontSize="24" FontFamily="Times New Roman" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                <TextBlock.Background>
+                    <SolidColorBrush Color="Lime" Opacity="0.5"/>
+                </TextBlock.Background></TextBlock>
+            <TextBox x:Name="txt_Email" FontSize="20">
+                <TextBox.Background>
+                    <SolidColorBrush Color="LightGray" Opacity="0.5"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBlock Text="Команда" FontSize="24" FontFamily="Times New Roman" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="65,0,59,0">
+                <TextBlock.Background>
+                    <SolidColorBrush Color="Lime" Opacity="0.5"/>
+                </TextBlock.Background></TextBlock>
+            <TextBox x:Name="txt_Street_Copy2" FontSize="20" Margin="0,0,-1,0" Height="28">
+                <TextBox.Background>
+                    <SolidColorBrush Color="LightGray" Opacity="0.5"/>
+                </TextBox.Background>
+            </TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="1" VerticalAlignment="Center">
+            <TextBlock Text="Ім'я" FontSize="24" FontFamily="Times New Roman" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="125,0">
+                <TextBlock.Background>
+                    <SolidColorBrush Color="Lime" Opacity="0.5"/>
+                </TextBlock.Background></TextBlock>
+            <TextBox x:Name="txt_Name" FontSize="20" Margin="0,0,1,0">
+                <TextBox.Background>
+                    <SolidColorBrush Color="LightGray" Opacity="0.5"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBlock Text="Пароль" FontSize="24" FontFamily="Times New Roman" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="107,0">
+                <TextBlock.Background>
+                    <SolidColorBrush Color="Lime" Opacity="0.5"/>
+                </TextBlock.Background></TextBlock>
+            <TextBox x:Name="txt_Password" FontSize="20" Margin="0,0,1,0">
+                <TextBox.Background>
+                    <SolidColorBrush Color="LightGray" Opacity="0.5"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBlock Text="Дата народження" FontSize="24" FontFamily="Times New Roman" VerticalAlignment="Bottom" Margin="59,0,53,0" HorizontalAlignment="Center">
+                <TextBlock.Background>
+                    <SolidColorBrush Color="Lime" Opacity="0.5"/>
+                </TextBlock.Background></TextBlock>
+            <TextBox x:Name="txt_Street_Copy" FontSize="20">
+                <TextBox.Background>
+                    <SolidColorBrush Color="LightGray" Opacity="0.5"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBlock Text="Місто" FontSize="24" FontFamily="Times New Roman" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="114,0">
+                <TextBlock.Background>
+                    <SolidColorBrush Color="Lime" Opacity="0.5"/>
+                </TextBlock.Background></TextBlock>
+            <TextBox x:Name="txt_City" FontSize="20">
+                <TextBox.Background>
+                    <SolidColorBrush Color="LightGray" Opacity="0.5"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBlock Text="Телефон" FontSize="24" FontFamily="Times New Roman" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="101,0,100,0">
+                <TextBlock.Background>
+                    <SolidColorBrush Color="Lime" Opacity="0.5"/>
+                </TextBlock.Background></TextBlock>
+            <TextBox x:Name="txt_Phone" FontSize="20">
+                <TextBox.Background>
+                    <SolidColorBrush Color="LightGray" Opacity="0.5"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBlock Text="Тип велосипеду" FontSize="24" FontFamily="Times New Roman" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                <TextBlock.Background>
+                    <SolidColorBrush Color="Lime" Opacity="0.5"/>
+                </TextBlock.Background></TextBlock>
+            <TextBox x:Name="txt_Street" FontSize="20">
+                <TextBox.Background>
+                    <SolidColorBrush Color="LightGray" Opacity="0.5"/>
+                </TextBox.Background>
+            </TextBox>
+        </StackPanel>
+
+        <Button Content="Зареєструватись" VerticalAlignment="Bottom" HorizontalAlignment="Center" BorderBrush="White" FontSize="24" Grid.ColumnSpan="2" Click="btn_AddNewUser_Click" FontFamily="Times New Roman">
+            <Button.Background>
+                <SolidColorBrush Color="Lime" Opacity="0.5"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>
