@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfDentalClinicC"
         mc:Ignorable="d"
-        Title="Редагування" Height="475.2" Width="690.36" Icon="favicon.ico" WindowStartupLocation="CenterScreen">
+        Title="Редагування" Height="475.2" Width="690.36" MinHeight="475.2" MinWidth="690.36" Icon="favicon.ico" WindowStartupLocation="CenterScreen">
     <Window.Background>
         <ImageBrush ImageSource="/wallpaper_rayman_raving_rabbids_tv_party_01.jpg" Stretch="UniformToFill"/>
     </Window.Background>
