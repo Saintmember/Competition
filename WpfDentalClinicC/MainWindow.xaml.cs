@@ -37,12 +37,12 @@ namespace WpfDentalClinicC
                     }
                     else
                     {
-                        MessageBox.Show("Виникла помилка");
+                        MessageBox.Show("Error");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Не праавильно ввеедений логін, або пароль");
+                    MessageBox.Show("Login or pass failed");
                 }
             }
         }

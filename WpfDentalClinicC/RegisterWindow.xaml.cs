@@ -47,13 +47,15 @@ namespace WpfDentalClinicC
                 txt_Street.Focus();
             else
             {
-                ModelClient client = new ModelClient();
-                client.Name = txt_Name.Text;
-                client.SurName = txt_SurName.Text;
-                client.Login = txt_Login.Text;
-                client.Password = txt_Password.Text;
-                client.Email = txt_Email.Text;
-                client.Phone = txt_Phone.Text;
+                ModelClient client = new ModelClient
+                {
+                    Name = txt_Name.Text,
+                    SurName = txt_SurName.Text,
+                    Login = txt_Login.Text,
+                    Password = txt_Password.Text,
+                    Email = txt_Email.Text,
+                    Phone = txt_Phone.Text
+                };
                 using (Service1Client service1Client = new Service1Client())
                 {
                     bool Chak = service1Client.ChakLoginAddNewClient(txt_Login.Text);
@@ -64,7 +66,7 @@ namespace WpfDentalClinicC
                     }
                     else
                     {
-                        MessageBox.Show("Даний логін уже занятий", "Увага");
+                        MessageBox.Show("Логін уже існує.");
                     }
                 }
             }
