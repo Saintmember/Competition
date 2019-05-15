@@ -9,6 +9,11 @@ namespace WcfService1.ModelsToMap
     [DataContract]
     public class ModelClient
     {
+        public ModelClient()
+        {
+            DoctoorStatus = "";
+            DoctorName = "";
+        }
         [DataMember]
         public int Id { get; set; }
         [DataMember]

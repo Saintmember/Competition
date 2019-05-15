@@ -127,8 +127,8 @@ namespace WcfService1
             modelClient.Email = c.Email;
             modelClient.DiagnosisName = c.Diagnoses.Select(f => f.Name).ToArray();
             modelClient.DiagnosisDesc = c.Diagnoses.Select(f => f.Description).ToArray();
-            modelClient.DoctorName = c.Doctor.Name;
-            modelClient.DoctoorStatus = c.Doctor.DocStatus.NameStatus;
+            //modelClient.DoctorName = c.Doctor.Name;
+            //modelClient.DoctoorStatus = c.Doctor.DocStatus.NameStatus;
             return modelClient;
         }
         public void EditClient(ModelClient c)
